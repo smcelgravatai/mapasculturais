@@ -49,10 +49,10 @@ return array_merge($config,
             'setor_censitario'  => ['name' => \MapasCulturais\i::__('Setor Censitario'),'showLayer' => false]
         ],
         // latitude, longitude
-        'maps.center' => [-13.987376214146455, -54.38232421875],
+        'maps.center' => [-29.9332, -51.0272],
 
         // zoom do mapa
-        'maps.zoom.default' => 5,
+        'maps.zoom.default' => 12,
 
         'plugins.enabled' => array('agenda-singles', 'endereco'),
 
