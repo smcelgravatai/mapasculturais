@@ -145,7 +145,7 @@ class Site extends \MapasCulturais\Controller {
             $commitHash = trim(exec('git log --pretty="%h" -n1 HEAD'));
             $commitBranch = trim(exec('git rev-parse --abbrev-ref HEAD'));
             $commitDate = new \DateTime(trim(exec('git log -n1 --pretty=%ci HEAD')));
-            $commitDate->setTimezone(new \DateTimeZone('UTC'));
+            $commitDate->setTimezone(new \DateTimeZone('UTC-3'));
             $data['git-info'] = ['tag'=>$tagVersion, 'commit hash'=>$commitHash, 'commit date' => $commitDate->format('Y-m-d H:m:s'), 'branch' => $commitBranch];
         }
 
