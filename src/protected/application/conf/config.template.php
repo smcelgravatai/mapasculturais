@@ -52,11 +52,13 @@ return array_merge($config,
         'maps.center' => [-29.9332, -51.0272],
 
         // zoom do mapa
-        'maps.zoom.default' => 12,
+        'maps.zoom.default' => 13,
 
         'plugins.enabled' => array('agenda-singles', 'endereco'),
 
         'auth.provider' => 'Fake',
+
+        'app.timezone' => 'America/Sao_Paulo'
 
         // Token da API de Cep
         // Adquirido ao fazer cadastro em http://www.cepaberto.com/
